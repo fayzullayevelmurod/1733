@@ -32,6 +32,7 @@ select:focus {
 button {
 	border: none;
 	background: none;
+	cursor: pointer;
 }
 
 input:focus {
@@ -44,7 +45,9 @@ a:focus {
 	border: none;
 	-moz-outline-style: none;
 }
-
+a {
+	display: inline-block;
+}
 .wrapper {
 	overflow: hidden;
 }

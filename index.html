@@ -1,29 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<meta itemprop="description" name="description" content="page_description">
+	<title itemprop="headline">Title</title>
+	<!-- Inter font -->
+	<link rel="stylesheet" href="fonts/Inter/stylesheet.css">
 	<!-- swiper css -->
 	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
 	<!-- normalize css -->
 	<link rel="stylesheet" href="./libs/normalize.css">
 	<!-- custom css -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
 	<div class="wrapper">
 
-		<!-- header -->
-		<header class="header">
-
-		</header>
-
 		<!-- main -->
-		<main class="main">
+		<main itemscope itemtype="http://schema.org/WebPage" class="main">
+
+			<!-- intro -->
+			<section class="intro">
+				<div itemscope class="menu__overlay"></div>
+				<div itemscope itemtype="http://schema.org/Menu" class="menu">
+					<button itemprop="action" class="menu__close-btn" aria-label="menu__close-btn">
+						<img itemprop="image" src="./images/icons/close.svg" alt="close icon" width="17" height="17">
+					</button>
+					<img itemprop="logo" class="link__logo" src="images/link-logo.png" alt="17/33 image" width="130" height="130">
+					<div class="menu__link-btns" itemscope>
+						<a class="menu__link-btn" itemprop="url" href="#!">Магия чисел</a>
+						<a class="menu__link-btn" itemprop="url" href="#!">Исключительная локация</a>
+						<a class="menu__link-btn" itemprop="url" href="#!">Торждество архитектурной мысли</a>
+						<a class="menu__link-btn" itemprop="url" href="#!">Три пространства</a>
+						<a class="menu__link-btn" itemprop="url" href="#!">Элегантность в деталях</a>
+						<a class="menu__link-btn" itemprop="url" href="#!">Партнеры</a>
+						<a class="menu__link-btn" itemprop="url" href="#!">Галерея</a>
+						<a class="menu__link-btn" itemprop="url" href="#!">Динамика строительства</a>
+						<a class="menu__link-btn" itemprop="url" href="#!">Контакты</a>
+					</div>
+					<a itemprop="url" class="menu__btn" aria-label="Выбрать апартаменты" href="#!">
+						Выбрать апартаменты
+					</a>
+					<button itemprop="action" class="menu__btn open send__aplication-btn" aria-label="Оставить заявку" href="#!">
+						Оставить заявку
+					</button>
+					<a itemscope class="phone__box" href="#!">
+						<img itemprop="image" src="images/icons/phone-image-two.svg" alt="phone" width="48" height="48">
+						<span itemprop="telephone">+7 812 223 69 78</span>
+					</a>
+				</div>
+
+				<div itemscope class="intro__video-bg" itemtype="http://schema.org/VideoObject">
+					<iframe id="vimeo"
+						src="https://player.vimeo.com/video/880527324?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;background=1"
+						frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay"
+						muted="muted"></iframe>
+				</div>
+				<!-- header -->
+				<div class="container">
+					<header itemscope class="header" itemtype="http://schema.org/WPHeader">
+						<button itemprop="action" class="outline__btn" aria-label="Оставить заявку">Оставить заявку</button>
+						<div itemscope class="header__call">
+							<img itemprop="image" class="header__call-icon" src="images/icons/phone.svg" alt="phone icon" width="48"
+								height="48">
+							<a itemprop="telephone" class="header__call-phone" href="tel:+78122236978">+7 812 223 69 78</a>
+						</div>
+						<button itemprop="action" class="header__menu open__menu-btn">
+							<img itemprop="image" src="images/icons/hamburger.svg" alt="hamburger icon" width="18" height="16">
+						</button>
+					</header>
+
+					<div itemscope itemtype="http://schema.org/LocalBusiness" class="intro__info-box">
+						<h1 itemprop="name" class="intro__title">Новая</h1>
+						<h1 itemprop="name" class="intro__title">легенда</h1>
+						<h1 itemprop="name" class="intro__title">Петровского</h1>
+						<h1 itemprop="name" class="intro__title">острова</h1>
+						<p itemprop="description" class="intro__description">
+							Новый исключительный проект от Element
+							Development и яркая премьера в одной
+							из самых престижных локаций Петербурга —
+							на Петровском острове.
+						</p>
+					</div>
+				</div>
+
+				<div class="premium__aparment-box" itemscope itemtype="http://schema.org/Thing">
+					<img itemprop="image" src="images/logo.png" alt="logo" width="106" height="102">
+					<p class="description" itemprop="description">Премиальные резиденции для роскошной жизни</p>
+					<a class="select__aparment-btn" itemprop="url" href="#!">Выбрать апартаменты</a>
+				</div>
+
+			</section>
 
 		</main>
 
@@ -38,7 +109,7 @@
 	<!-- swiper js -->
 	<script src="./libs/swiper/swiper.min.js"></script>
 	<!-- custom js -->
-	<script src="./libs/swiper/swiper.min.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 
 </html>
