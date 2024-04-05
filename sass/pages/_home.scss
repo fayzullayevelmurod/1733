@@ -1,7 +1,7 @@
 // intro
 .intro {
   padding: 10px;
-  height: 100vh;
+  // min-height: 100vh;
   z-index: 1;
   padding: 60px 0 216px 0;
   position: relative;
@@ -13,7 +13,7 @@
     top: -3%;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     z-index: -1;
     background: #314c60;
     overflow: hidden;
@@ -179,5 +179,49 @@
 
   &.active {
     display: block;
+  }
+}
+
+// numbers
+.numbers {
+  margin: 234px 0 32px 0;
+  .title {
+    font-size: 86.29px;
+    font-weight: 400;
+    line-height: 118.27px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__swiper {
+    max-width: 1267px;
+    margin-left: 228px;
+    .swiper__slide-title {
+      font-size: 75.8px;
+      font-weight: 400;
+      line-height: 150.53px;
+      position: relative;
+      width: fit-content;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 86%;
+        left: 0;
+        width: 119.99px;
+        height: 1px;
+        transform: rotate(-40deg);
+        background: #1c1c1c;
+      }
+    }
+    .swiper__slide-description {
+      font-size: 19.62px;
+      font-weight: 400;
+      line-height: 29.57px;
+      margin-left: 75px;
+    }
   }
 }

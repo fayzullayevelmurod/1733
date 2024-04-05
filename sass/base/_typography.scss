@@ -5,6 +5,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #1c1c1c;
+  position: relative;
 
   &.overflow-hidden {
     overflow: hidden;
@@ -13,4 +14,11 @@ body {
 .container {
   max-width: 1720px;
   margin: 0 auto;
+}
+
+.title {
+  font-size: 86px;
+  font-weight: 400;
+  line-height: 118px;
+  letter-spacing: 1px;
 }

@@ -45,7 +45,8 @@
 					<a itemprop="url" class="menu__btn" aria-label="Выбрать апартаменты" href="#!">
 						Выбрать апартаменты
 					</a>
-					<button itemprop="action" class="menu__btn open send__aplication-btn" aria-label="Оставить заявку" href="#!">
+					<button itemprop="action" class="menu__btn open send__aplication-btn" aria-label="Оставить заявку"
+						data-contact-form-btn href="#!">
 						Оставить заявку
 					</button>
 					<a itemscope class="phone__box" href="#!">
@@ -59,11 +60,13 @@
 						src="https://player.vimeo.com/video/880527324?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;background=1"
 						frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay"
 						muted="muted"></iframe>
+
 				</div>
 				<!-- header -->
 				<div class="container">
 					<header itemscope class="header" itemtype="http://schema.org/WPHeader">
-						<button itemprop="action" class="outline__btn" aria-label="Оставить заявку">Оставить заявку</button>
+						<button itemprop="action" class="outline__btn" aria-label="Оставить заявку" data-contact-form-btn>Оставить
+							заявку</button>
 						<div itemscope class="header__call">
 							<img itemprop="image" class="header__call-icon" src="images/icons/phone.svg" alt="phone icon" width="48"
 								height="48">
@@ -96,6 +99,75 @@
 
 			</section>
 
+			<!-- numbers -->
+			<section class="numbers" itemscope itemtype="http://schema.org/ItemList">
+				<div class="container" itemprop="mainEntity" itemscope itemtype="http://schema.org/ListItem">
+					<h1 itemprop="name" class="title">Магия <br> чисел</h1>
+					<div class="swiper numbers__swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+								<h2 class="swiper__slide-title" itemprop="name">17</h2>
+								<p class="swiper__slide-description" itemprop="description">
+									Номер дома по <br> Ремесленной улице
+								</p>
+							</div>
+							<div class="swiper-slide" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+								<h2 class="swiper__slide-title" itemprop="name">33</h2>
+								<p class="swiper__slide-description" itemprop="description">
+									Один из <br>33 островов
+								</p>
+							</div>
+							<div class="swiper-slide" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+								<h2 class="swiper__slide-title" itemprop="name">17</h2>
+								<p class="swiper__slide-description" itemprop="description">
+									Стратегических <br>партнеров
+								</p>
+							</div>
+							<div class="swiper-slide" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+								<h2 class="swiper__slide-title" itemprop="name">17</h2>
+								<p class="swiper__slide-description" itemprop="description">
+									Номер дома по <br> Ремесленной улице
+								</p>
+							</div>
+						</div>
+						<div class="swiper__btns">
+							<div class="swiper__btn swiper-prev-btn">
+								<img src="images/icons/prev-arrow.svg" alt="">
+							</div>
+							<div class="swiper__btn swiper-next-btn">
+								<img src="images/icons/next-arrow.svg" alt="next-arrow" width="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- location -->
+			<section class="location" itemscope itemtype="http://schema.org/Place">
+				<div class="container">
+					<div itemscope class="map__box">
+						<h2 itemprop="name" class="title">ИСКЛЮЧИТЕЛЬНАЯ <br> ЛОКАЦИЯ</h2>
+						<div>
+							<iframe
+								src="https://yandex.uz/map-widget/v1/?ll=-0.090420%2C51.491708&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMjI5NzMwMDkzEhZVbml0ZWQgS2luZ2RvbSwgTG9uZG9uIgoNYcICvhWHB05C&z=10.82"
+								width="777" height="806" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+						</div>
+					</div>
+					<div class="location__description" itemprop="description">
+						<h3 class="location__title" itemprop="name">
+							17/33 расположился в эпицентре красивой жизни, в тихом и престижном месте в объятиях главных островов
+							Петербурга — Петроградской стороны, Васильевского и Крестовского.
+						</h3>
+						<p itemprop="description" class="location__description">Отсюда до ключевых точек притяжения, любимых парков, шопинга и развлечений — рукой
+							подать </p>
+						<h3 class="location__title" itemprop="name">Захватывающие виды</h3>
+						<p itemprop="description" class="location__description">Открыточный Петербург как на ладони, шум и суета мегаполиса сменяются шелестом волн, а воздух — всегда
+							свежий благодаря прохладному бризу с залива</p>
+					</div>
+				</div>
+			</section>
+
+
 		</main>
 
 
@@ -103,6 +175,33 @@
 		<footer class="footer">
 
 		</footer>
+
+		<div itemscope itemtype="http://schema.org/LocalBusiness" class="leave__request">
+			<div itemscope class="leave__request-header">
+				<h3 class="leave__request-title">Оставьте заявку и наш менеджер свяжется с Вами в ближайшее время</h3>
+				<button class="close__contact-btn" aria-label="close contact btn">
+					<img src="images/icons/close.svg" alt="close icon" width="20" height="20">
+				</button>
+			</div>
+			<form itemprop="potentialAction" itemscope itemtype="http://schema.org/CommunicateAction" class="form">
+				<div class="form__input-box">
+					<input itemprop="agent" type="text" name="name" placeholder="Ваше имя" class="form__input">
+					<input itemprop="recipient" type="tel" name="telephone" placeholder="Телефон" class="form__input">
+				</div>
+
+				<div itemprop="target" class="multi__select-boxes">
+					<div class="form__input multi__select"></div>
+					<div class="form__input multi__select"></div>
+					<div class="form__input multi__select"></div>
+					<div class="form__input multi__select"></div>
+				</div>
+
+				<button type="submit" class="send__btn">Отправить</button>
+				<p class="privacy__policy-agreement">Нажимая кнопку «Отправить», я соглашаюсь <br> с условиями обработки
+					персональных
+					данных.</p>
+			</form>
+		</div>
 
 	</div>
 
