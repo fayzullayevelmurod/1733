@@ -56,3 +56,17 @@ var numbersSwiper = new Swiper(".numbers__swiper", {
     prevEl: ".swiper-prev-btn",
   },
 });
+
+// location__swiper
+var numbersSwiper = new Swiper(".location__swiper", {
+  slidesPerView: 1.3,
+  spaceBetween: 40,
+  centeredSlides: true,
+  roundLengths: true,
+  loop: true,
+  speed: 900,
+  navigation: {
+    nextEl: ".swiper-next-btn-two",
+    prevEl: ".swiper-prev-btn-two",
+  },
+});
